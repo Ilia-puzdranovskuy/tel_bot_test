@@ -6,7 +6,8 @@ const mongoose = require('mongoose');
 
 const token = '5679047467:AAE66rPxFeLWTQYHHdFSzxJ4wTH7mYuwKFg';
 
-
+const app = express()
+app.use(bodyParser.json())
 const Users = require('./models/users');
 
 const { Telegraf } = require('telegraf');
