@@ -1,0 +1,16 @@
+{
+  "name": "tl_bot",
+  "version": "1.0.0",
+  "description": "Бот для знайомств",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "author": "Illia",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^6.6.4",
+    "telegraf": "^4.10.0"
+  }
+}
