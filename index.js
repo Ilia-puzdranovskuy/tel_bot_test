@@ -1,4 +1,7 @@
 
+const express = require('express')
+const bodyParser = require('body-parser')
+
 const mongoose = require('mongoose');
 
 const token = '5679047467:AAE66rPxFeLWTQYHHdFSzxJ4wTH7mYuwKFg';
@@ -139,6 +142,9 @@ bot.action('next',async ctx => {
 
 
 let start = async () =>{
+    app.listen(process.env.PORT || 5000, async () => {
+        console.log('🚀 app running on port', process.env.PORT || 5000)
+    })
     await mongoose.connect('mongodb+srv://bot:1111@cluster0.xp3ldf6.mongodb.net/?retryWrites=true&w=majority');
     console.log("DB connected!");
     bot.launch();
